@@ -1,0 +1,10 @@
+:8080
+root * public
+@notget not method GET
+route @notget {
+	basicauth {
+		test $2a$14$jysmyXc6bnzhFM5BJ2Vk1uzLLfeJiRSO5Gh5JGpl0euXFd2NEVdpq
+	}
+  webdav
+}
+file_server browse
